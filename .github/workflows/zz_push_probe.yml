@@ -1,0 +1,9 @@
+name: zz-push-probe
+on:
+  push:
+    paths: [ ".github/workflows/zz_push_probe.yml" ]
+jobs:
+  ok:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "::notice:: probe OK"
